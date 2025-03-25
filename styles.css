@@ -3,10 +3,24 @@ body {
     text-align: center;
 }
 
+button {
+    border: none;
+    padding: 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+}
 @media (prefers-color-scheme:light) {
     body {
         background-color: rgb(255, 240, 220);
         color: rgb(14, 0, 90);
+    }
+    button {
+        background-color: rgb(14, 0, 90);
+        color: white;
+    }
+
+    #buttons {
+        background-color:rgb(0, 242, 255);
     }
 }
 
@@ -14,5 +28,13 @@ body {
     body {
             background-color: rgb(14, 0, 90);
             color: white;
+    }
+    button {
+        background-color: rgb(255, 255, 255);
+        color: rgb(14, 0, 90);
+    }
+    
+    #buttons {
+        background-color:rgb(3, 121, 40);
     }
 }

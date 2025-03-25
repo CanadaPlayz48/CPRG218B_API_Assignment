@@ -6,7 +6,7 @@
         .then (data => {
             console.log(data)
             if (data.setup) {
-                document.getElementById("content").innerHTML = data.setup + "<br>" + data.delivery
+                document.getElementById("content").innerHTML = data.setup + " ... " + data.delivery
             }
             else {
             document.getElementById("content").innerHTML = data.joke
@@ -22,7 +22,7 @@
             console.log(data)
             document.getElementById("header").innerHTML = "A random Programming joke"
             if (data.setup) {
-                document.getElementById("content").innerHTML = data.setup + "<br>" + data.delivery
+                document.getElementById("content").innerHTML = data.setup + " ... " + data.delivery
             }
             else {
             document.getElementById("content").innerHTML = data.joke
@@ -38,7 +38,7 @@
             console.log(data)
             document.getElementById("header").innerHTML = "A random Miscellaneous joke"
             if (data.setup) {
-                document.getElementById("content").innerHTML = data.setup + "<br>" + data.delivery
+                document.getElementById("content").innerHTML = data.setup + " ... " + data.delivery
             }
             else {
             document.getElementById("content").innerHTML = data.joke
@@ -54,7 +54,7 @@
                 console.log(data)
                 document.getElementById("header").innerHTML = "A random Pun"
                 if (data.setup) {
-                    document.getElementById("content").innerHTML = data.setup + "<br>" + data.delivery
+                    document.getElementById("content").innerHTML = data.setup + " ... " + data.delivery
                 }
                 else {
                 document.getElementById("content").innerHTML = data.joke
@@ -70,7 +70,7 @@
                     console.log(data)
                     document.getElementById("header").innerHTML = "A random Spooky joke"
                     if (data.setup) {
-                        document.getElementById("content").innerHTML = data.setup + "<br>" + data.delivery
+                        document.getElementById("content").innerHTML = data.setup + " ... " + data.delivery
                     }
                     else {
                     document.getElementById("content").innerHTML = data.joke
@@ -86,7 +86,7 @@
                     console.log(data)
                     document.getElementById("header").innerHTML = "A random Christmas joke"
                     if (data.setup) {
-                        document.getElementById("content").innerHTML = data.setup + "<br>" + data.delivery
+                        document.getElementById("content").innerHTML = data.setup + " ... " + data.delivery
                     }
                     else {
                     document.getElementById("content").innerHTML = data.joke
@@ -94,17 +94,3 @@
                 })
             });
             
-
-
-    if (data.category == "Pun") {
-        document.getElementById("header").innerHTML = "A random "+data.category
-    }
-    else {
-        document.getElementById("header").innerHTML = "A random "+data.category+" joke"
-    }
-    if (data.setup) {
-        document.getElementById("content").innerHTML = data.setup + "<br>" + data.delivery
-    }
-    else {
-    document.getElementById("content").innerHTML = data.joke
-    }
